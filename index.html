@@ -2,151 +2,211 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Nor Kholis - Technology, Networking and Creative Design">
-    <title>NOR KHOLIS | Digital Technology</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jelajahi keindahan hutan, air terjun, dan pegunungan bersama Jelajah Hutan.">
+  <title>JELAJAH HUTAN | Petualangan Tanpa Batas</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header class="navbar">
-    <a href="#home" class="logo">
-        <span class="logo-icon">NK</span>
-        NOR <span>KHOLIS.</span>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <a href="#home" class="brand">
+      <svg class="logo" viewBox="0 0 100 100" role="img" aria-label="Logo Jelajah Hutan">
+        <circle cx="50" cy="50" r="45" fill="#07150c" stroke="#9cff00" stroke-width="3"/>
+        <path d="M12 65 L39 28 L51 43 L66 19 L89 65 Z" fill="#eaffdf"/>
+        <path d="M31 65 L39 28 L51 43 L42 65 Z" fill="#8bba9a"/>
+        <path d="M51 43 L66 19 L89 65 L70 65 L66 48 L60 65 Z" fill="#b5d9c0"/>
+        <path d="M8 68 H92" stroke="#9cff00" stroke-width="3"/>
+        <g fill="#9cff00">
+          <path d="M17 66 L25 48 L33 66 Z M20 58 H30 L25 43 Z"/>
+          <path d="M65 66 L74 45 L83 66 Z M69 56 H79 L74 39 Z"/>
+        </g>
+        <text x="50" y="80" text-anchor="middle" font-size="9" font-weight="900" fill="#ffffff">JELAJAH</text>
+        <text x="50" y="89" text-anchor="middle" font-size="8" font-weight="900" fill="#9cff00">HUTAN</text>
+      </svg>
+      <span class="brand-name">JELAJAH<br><strong>HUTAN</strong></span>
     </a>
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#service">Services</a>
-        <a href="#contact">Contact</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false">
+      ☰
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#destinasi">Destinasi</a>
+      <a href="#galeri">Galeri</a>
+      <a href="#kontak">Kontak</a>
     </nav>
 
-    <a href="#contact" class="nav-button">LET'S TALK ↗</a>
-</header>
+    <a href="#destinasi" class="nav-button">Mulai Jelajah ↗</a>
+  </header>
 
-<main>
-<section class="hero" id="home">
-    <div class="hero-content">
-        <div class="status">
-            <span class="status-dot"></span>
-            WELCOME TO MY DIGITAL WORLD
-        </div>
-
-        <p class="intro">HELLO, I'M</p>
-
-        <h1>NOR <span>KHOLIS.</span></h1>
-
-        <h2>TECHNOLOGY & NETWORKING</h2>
-
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">PETUALANGAN TANPA BATAS</p>
+        <h1>JELAJAH<br><span>HUTAN</span></h1>
         <p class="hero-description">
-            Exploring technology, mastering networking,
-            building creativity and creating digital
-            experiences for the future.
+          Menjelajahi keindahan alam, merasakan kesegaran hutan,
+          dan menjaga kelestariannya.
         </p>
-
-        <div class="hero-buttons">
-            <a href="#about" class="primary-button">EXPLORE MORE ↗</a>
-            <a href="#contact" class="secondary-button">CONTACT ME</a>
+        <div class="hero-actions">
+          <a href="#destinasi" class="button button-green">Explore Sekarang →</a>
+          <a href="#tentang" class="button button-outline">Tentang Kami</a>
         </div>
-
-        <div class="hero-info">
-            <div><strong>01</strong><span>TECHNOLOGY</span></div>
-            <div><strong>02</strong><span>NETWORKING</span></div>
-            <div><strong>03</strong><span>CREATIVITY</span></div>
+      </div>
+      <div class="hero-bottom">
+        <div class="feature">
+          <span>🌲</span>
+          <div><strong>Keindahan Alam</strong><small>Nikmati panorama hutan.</small></div>
         </div>
-    </div>
-
-    <div class="visual">
-        <div class="orbit orbit-one"></div>
-        <div class="orbit orbit-two"></div>
-        <div class="neon-ball">
-            <span>NK</span>
+        <div class="feature">
+          <span>⛰️</span>
+          <div><strong>Petualangan Seru</strong><small>Rasakan sensasinya.</small></div>
         </div>
-        <div class="visual-name">NOR <span>KHOLIS.</span></div>
-        <p class="visual-caption">DIGITAL INNOVATION</p>
-        <div class="floating-tag tag-one">✦ NETWORKING</div>
-        <div class="floating-tag tag-two">✦ CREATIVE</div>
-    </div>
-</section>
-
-<div class="marquee">
-    <div class="marquee-content">
-        TECHNOLOGY ✦ NETWORKING ✦ MIKROTIK ✦
-        WEB DEVELOPMENT ✦ CREATIVITY ✦
-        TECHNOLOGY ✦ NETWORKING ✦ MIKROTIK ✦
-        WEB DEVELOPMENT ✦ CREATIVITY ✦
-    </div>
-</div>
-
-<section class="section about" id="about">
-    <div class="section-label">01 / ABOUT ME</div>
-    <h2>BUILDING THE<br><span>DIGITAL FUTURE.</span></h2>
-
-    <p>
-        Halo! Saya Nor Kholis. Selamat datang di website
-        personal saya. Saya tertarik dengan dunia teknologi,
-        jaringan komputer, MikroTik, dan pengembangan website.
-        Mari berkembang dan berinovasi bersama.
-    </p>
-</section>
-
-<section class="section services" id="service">
-    <div class="section-label">02 / MY INTERESTS</div>
-    <h2>WHAT I <span>EXPLORE.</span></h2>
-
-    <div class="service-grid">
-        <div class="service-card">
-            <div class="service-number">01</div>
-            <div class="service-icon">⌘</div>
-            <h3>Networking</h3>
-            <p>Belajar jaringan komputer dan konfigurasi jaringan.</p>
+        <div class="feature">
+          <span>🍃</span>
+          <div><strong>Jaga Kelestarian</strong><small>Lestarikan masa depan.</small></div>
         </div>
-
-        <div class="service-card">
-            <div class="service-number">02</div>
-            <div class="service-icon">◈</div>
-            <h3>MikroTik</h3>
-            <p>Eksplorasi konfigurasi router dan manajemen jaringan.</p>
+        <div class="feature">
+          <span>📷</span>
+          <div><strong>Abadikan Momen</strong><small>Simpan kenangan indah.</small></div>
         </div>
+      </div>
+    </section>
 
-        <div class="service-card">
-            <div class="service-number">03</div>
-            <div class="service-icon">⌨</div>
-            <h3>Web Design</h3>
-            <p>Membuat website modern dengan HTML dan CSS.</p>
+    <!-- TENTANG -->
+    <section class="about section" id="tentang">
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=1000" alt="Jalan setapak di tengah hutan hijau">
+      </div>
+      <div class="about-text">
+        <p class="section-tag">01 / TENTANG KAMI</p>
+        <h2>Jelajah Hutan<br>Untuk Alam yang <span>Lebih Baik.</span></h2>
+        <p>
+          Kami hadir untuk mengajak Anda menjelajahi keindahan hutan,
+          mengenal kekayaan alam, dan menjaga kelestariannya.
+          Mari ciptakan pengalaman petualangan yang tak terlupakan.
+        </p>
+        <a href="#kontak" class="button button-green">Pelajari Lebih Lanjut →</a>
+      </div>
+    </section>
+
+    <!-- DESTINASI -->
+    <section class="destinations section" id="destinasi">
+      <div class="section-heading">
+        <p class="section-tag">02 / DESTINASI</p>
+        <h2>EXPLORE THE <span>WILD.</span></h2>
+        <p>Temukan keindahan alam yang menakjubkan.</p>
+      </div>
+      <div class="destination-grid">
+        <article class="destination-card">
+          <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=700" alt="Hutan hijau">
+          <div class="card-label"><strong>🌲 Hutan Hijau</strong><span>↗</span></div>
+        </article>
+        <article class="destination-card">
+          <img src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=700" alt="Air terjun">
+          <div class="card-label"><strong>💧 Air Terjun</strong><span>↗</span></div>
+        </article>
+        <article class="destination-card">
+          <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=700" alt="Pegunungan">
+          <div class="card-label"><strong>⛰️ Pegunungan</strong><span>↗</span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- GALERI -->
+    <section class="gallery-section section" id="galeri">
+      <div class="gallery-heading">
+        <div>
+          <p class="section-tag">03 / GALERI</p>
+          <h2>CAPTURE THE <span>MOMENT.</span></h2>
         </div>
-    </div>
-</section>
+        <p>Keindahan alam dalam setiap perjalanan.</p>
+      </div>
 
-<section class="section contact" id="contact">
-    <div class="section-label">03 / CONTACT</div>
-    <h2>LET'S CREATE<br><span>SOMETHING GREAT.</span></h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1511497584788-876760111969?w=900" alt="Pepohonan hutan yang rindang" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=900" alt="Air terjun di alam bebas" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=900" alt="Pemandangan gunung" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?w=900" alt="Tenda di area perkemahan" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=900" alt="Pemandangan danau dan pegunungan" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=900" alt="Sinar matahari menembus pepohonan" loading="lazy">
+        </div>
+      </div>
+    </section>
 
-    <p>
-        Punya ide atau ingin berdiskusi tentang teknologi?
-        Hubungi saya sekarang.
-    </p>
+    <!-- KONTAK -->
+    <section class="contact section" id="kontak">
+      <div class="contact-text">
+        <p class="section-tag">04 / KONTAK</p>
+        <h2>LET'S EXPLORE<br>THE BEAUTY OF <span>NATURE.</span></h2>
+        <p>
+          Punya cerita, ide, atau ingin berbagi pengalaman petualangan?
+          Hubungi kami!
+        </p>
+        <!-- Ganti nomor di bawah dengan nomor WhatsApp milikmu -->
+        <a class="button button-green" href="https://wa.me/62XXXXXXXXXX" target="_blank" rel="noopener">
+          ☎ Hubungi Kami via WhatsApp →
+        </a>
+      </div>
+      <div class="contact-image"></div>
+    </section>
+  </main>
 
-    <a href="https://wa.me/6281234567890"
-       target="_blank"
-       rel="noopener noreferrer"
-       class="primary-button">
-        CONTACT VIA WHATSAPP ↗
+  <!-- FOOTER -->
+  <footer class="footer">
+    <a href="#home" class="brand footer-brand">
+      <svg class="logo" viewBox="0 0 100 100" role="img" aria-label="Logo Jelajah Hutan">
+        <circle cx="50" cy="50" r="45" fill="#07150c" stroke="#9cff00" stroke-width="3"/>
+        <path d="M12 65 L39 28 L51 43 L66 19 L89 65 Z" fill="#eaffdf"/>
+        <path d="M31 65 L39 28 L51 43 L42 65 Z" fill="#8bba9a"/>
+        <path d="M51 43 L66 19 L89 65 L70 65 L66 48 L60 65 Z" fill="#b5d9c0"/>
+        <g fill="#9cff00"><path d="M17 66 L25 48 L33 66 Z"/><path d="M65 66 L74 45 L83 66 Z"/></g>
+        <text x="50" y="82" text-anchor="middle" font-size="9" font-weight="900" fill="#ffffff">JELAJAH</text>
+        <text x="50" y="90" text-anchor="middle" font-size="8" font-weight="900" fill="#9cff00">HUTAN</text>
+      </svg>
+      <span class="brand-name">JELAJAH<br><strong>HUTAN</strong></span>
     </a>
-</section>
-</main>
+    <p>Jaga Alam, Jaga Kehidupan.</p>
+    <p class="copyright">© 2026 Jelajah Hutan. All Rights Reserved.</p>
+    <a href="#home" class="back-top">Kembali ke Atas ↑</a>
+  </footer>
 
-<footer>
-    <a href="#home" class="logo">
-        <span class="logo-icon">NK</span>
-        NOR <span>KHOLIS.</span>
-    </a>
+  <script>
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
 
-    <p>© 2026 NOR KHOLIS. ALL RIGHTS RESERVED.</p>
-    <a href="#home" class="back-top">BACK TO TOP ↑</a>
-</footer>
+    menuToggle.addEventListener("click", () => {
+      const isOpen = navLinks.classList.toggle("active");
+      menuToggle.setAttribute("aria-expanded", isOpen);
+    });
+
+    navLinks.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+        menuToggle.setAttribute("aria-expanded", "false");
+      });
+    });
+  </script>
 
 </body>
 </html>
